@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mithila Krishna Shashikala | Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f9ff;--panel:#ffffff;--ink:#182342;--muted:#65708e;--line:rgba(83,106,170,.17);--cy:#087dbd;--vi:#7955df;--mi:#008d83;--pk:#d94c9d;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif;font-size:1rem;line-height:1.7}
+h1,h2,h3,.sg{font-family:"Space Grotesk",Inter,Arial,sans-serif}
+h1,h2,h3{margin:0;line-height:1.1}
+a{color:var(--cy)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cy);outline-offset:3px;border-radius:6px}
+.wrap{max-width:980px;margin:0 auto;padding:0 1.4rem}
+.bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--cy),var(--vi),var(--pk));box-shadow:0 0 12px var(--cy);transform:scaleX(0);transform-origin:left;z-index:30;pointer-events:none}
+nav{position:sticky;top:0;z-index:20;background:rgba(246,249,255,.84);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;gap:1.4rem;height:3.7rem;font-size:.92rem}
+nav .nm{margin-right:auto;font-family:"Space Grotesk",sans-serif;font-weight:700;text-decoration:none;color:var(--ink)}
+nav a.l{color:var(--muted);text-decoration:none;transition:color .3s,text-shadow .3s}
+nav a.l:hover{color:var(--cy);text-shadow:0 0 14px rgba(94,242,255,.7)}
+.hero{position:relative;padding:clamp(4rem,11vw,7.5rem) 0 clamp(3rem,7vw,4.5rem);overflow:hidden;
+background:radial-gradient(500px circle at var(--hx,75%) var(--hy,20%),rgba(134,101,239,.14),transparent 65%),radial-gradient(40% 60% at 10% 100%,rgba(27,151,228,.12),transparent 70%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(70,100,180,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(70,100,180,.055) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%);pointer-events:none}
+.hero .wrap{position:relative}
+.pill{display:inline-flex;align-items:center;gap:.55rem;font-size:.82rem;color:var(--muted);border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:999px;padding:.25rem .9rem;margin-bottom:1.6rem}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mi);box-shadow:0 0 10px var(--mi);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.4;transform:scale(.75)}}
+h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:700;letter-spacing:-.03em;max-width:11em}
+h1 span{background:linear-gradient(90deg,var(--cy),var(--vi) 60%,var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(155,140,255,.35))}
+.lede{font-size:1.2rem;max-width:33em;margin:1.5rem 0 .6rem}
+.seek{color:var(--muted);max-width:34em;margin:0 0 1.8rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{font-family:"Space Grotesk",sans-serif;font-weight:700;padding:.7rem 1.4rem;border-radius:12px;text-decoration:none;border:1px solid rgba(8,125,189,.4);color:var(--cy);transition:transform .3s,box-shadow .3s,background-color .3s,color .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 26px -2px rgba(8,125,189,.3);background:rgba(8,125,189,.08)}
+.btn.p{background:var(--cy);color:#ffffff;border-color:var(--cy)}
+.btn.p:hover{background:#086ea7}
+.hero .wrap>*{animation:in .9s ease both}
+.hero .wrap>*:nth-child(2){animation-delay:.1s}.hero .wrap>*:nth-child(3){animation-delay:.2s}.hero .wrap>*:nth-child(4){animation-delay:.3s}.hero .wrap>*:nth-child(5){animation-delay:.4s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+section{padding:4rem 0 .5rem}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1.6rem;display:flex;align-items:center;gap:1rem}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+h2 small{font-family:Inter,sans-serif;font-size:.8rem;font-weight:400;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.card{--g:var(--cy);position:relative;overflow:hidden;border-radius:18px;padding:1.5rem 1.6rem;background:var(--panel);border:1px solid var(--line);cursor:pointer;transform-style:preserve-3d;transition:transform .25s ease-out,border-color .35s,box-shadow .35s}
+.card.wide{grid-column:1/-1}
+.g2{--g:var(--vi)}.g3{--g:var(--mi)}.g4{--g:var(--pk)}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--g) 20%,transparent),transparent 65%)}
+.card:hover{border-color:color-mix(in srgb,var(--g) 55%,transparent);box-shadow:0 0 34px -10px var(--g)}
+.card:hover::before{opacity:1}
+.card>*{position:relative}
+.dt{font-size:.8rem;color:var(--g);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.5rem;display:flex;gap:.6rem;align-items:center}
+.st{font-size:.72rem;border:1px solid var(--g);border-radius:999px;padding:0 .55rem;letter-spacing:.04em}
+.card h3{font-size:1.35rem;margin-bottom:.3rem}
+.sub{font-size:.88rem;color:var(--muted);margin-bottom:.8rem}
+.chips{list-style:none;padding:0;margin:0 0 .9rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.chips li{font-size:.78rem;padding:.1rem .65rem;border-radius:8px;border:1px solid var(--line);background:rgba(70,100,180,.055);transition:border-color .3s,box-shadow .3s,color .3s}
+.chips li:hover{border-color:var(--cy);color:var(--cy);box-shadow:0 0 14px -3px rgba(94,242,255,.6)}
+.sum{margin:0;color:var(--ink)}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1)}
+.more>div{overflow:hidden}
+.card.open .more{grid-template-rows:1fr}
+ul.pts{margin:.7rem 0 0;padding-left:1.1rem;color:var(--ink)}ul.pts li{margin-bottom:.45rem}ul.pts li::marker{color:var(--g)}
+.tg{margin-top:.9rem;font:inherit;font-size:.85rem;color:var(--g);background:none;border:1px solid transparent;padding:.15rem .1rem;cursor:pointer;display:inline-flex;gap:.45rem;align-items:center}
+.tg span{display:inline-block;transition:transform .4s;font-size:1.1rem;line-height:1}
+.card.open .tg span{transform:rotate(45deg)}
+.tg:hover{text-shadow:0 0 12px var(--g)}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+.skills .card{cursor:default}.skills h3{font-size:1.05rem;margin-bottom:.8rem}.skills .chips{margin:0}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:2.4rem;align-items:start}
+.two h3{font-size:1.2rem;margin-bottom:1rem}
+.e{position:relative;padding:.1rem 0 1.2rem 1.5rem;border-left:1px solid var(--line)}
+.e::before{content:"";position:absolute;left:-5px;top:.55rem;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--vi);transition:background-color .3s,box-shadow .3s}
+.e:hover::before{background:var(--vi);box-shadow:0 0 14px var(--vi)}
+.e b{display:block;font-weight:500}.e small{display:block;color:var(--muted);font-size:.84rem}.e p{margin:.2rem 0 0;color:var(--muted)}
+.contact{margin:1rem 0 3rem;padding:clamp(1.8rem,5vw,3rem);border-radius:22px;border:1px solid rgba(155,140,255,.3);background:radial-gradient(60% 120% at 100% 0%,rgba(134,101,239,.14),transparent 70%),var(--panel);box-shadow:0 0 50px -20px var(--vi)}
+.contact h2{margin-bottom:1rem}.contact h2::after{display:none}
+.contact p{color:var(--muted);max-width:32em;margin:0 0 1.4rem}
+footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.88rem;padding:1.5rem 0 2.2rem}
+.js .rv{opacity:0;translate:0 16px;transition:opacity .8s ease,translate .8s ease,transform .25s ease-out,border-color .35s,box-shadow .35s}
+.js .rv.in{opacity:1;translate:0 0}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;translate:0 0}.bar{display:none}}
+@media(max-width:720px){.grid,.skills,.two{grid-template-columns:1fr}nav .l.h{display:none}}
+
+/* luminous glass panels and interactive controls */
+nav{box-shadow:0 8px 30px rgba(74,99,155,.07)}
+.hero{background:radial-gradient(600px circle at var(--hx,75%) var(--hy,20%),rgba(125,94,230,.18),transparent 70%),radial-gradient(50% 70% at 5% 95%,rgba(0,174,221,.12),transparent 70%),var(--bg)}
+.card{box-shadow:0 12px 36px rgba(54,78,135,.07)}
+.card:hover{box-shadow:0 16px 48px rgba(92,84,205,.16),0 0 30px -18px var(--g)}
+.btn.p{background:linear-gradient(110deg,#087dbd,#7955df);color:white;border-color:transparent;box-shadow:0 8px 28px rgba(110,92,215,.23)}
+.btn.p:hover{background:linear-gradient(110deg,#066aa4,#6743ca)}
+.pill{box-shadow:0 0 28px rgba(121,85,223,.1)}
+.repo{display:inline-block;margin-right:1rem;margin-top:.8rem;font-size:.85rem;text-decoration:none;font-weight:700}
+.repo:hover{text-decoration:underline}
+@media(prefers-reduced-motion:reduce){.pill i{animation:none}}
+
+/* Cute futuristic avatar, made entirely with SVG and CSS */
+.hero .wrap{max-width:1120px}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(270px,.85fr);gap:2rem;align-items:center}
+.avatar-scene{position:relative;min-height:370px;display:grid;place-items:center;isolation:isolate}
+.avatar-scene::before{content:"";position:absolute;width:88%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f5e9ff 0%,#e3f8ff 52%,transparent 73%);filter:blur(8px);z-index:-1}
+.avatar-art{width:min(100%,370px);overflow:visible;filter:drop-shadow(0 24px 28px rgba(92,79,174,.14));animation:floaty 4s ease-in-out infinite}
+.avatar-scene:hover .avatar-art{animation-duration:2s}
+.avatar-wave{transform-box:fill-box;transform-origin:bottom left;animation:wavehand 3.4s ease-in-out infinite}
+.avatar-scene:hover .avatar-wave{animation:wavehand .6s ease-in-out infinite}
+.avatar-eye{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+.float-icon{position:absolute;font-size:1.8rem;filter:drop-shadow(0 5px 8px #c5b5ef);animation:floaty 3.5s ease-in-out infinite;pointer-events:none}
+.float-icon.a{top:9%;left:10%}.float-icon.b{right:6%;top:15%;animation-delay:-1s}.float-icon.c{left:3%;bottom:23%;animation-delay:-2s}.float-icon.d{right:5%;bottom:17%;animation-delay:-.5s}
+.avatar-caption{position:absolute;bottom:0;left:50%;transform:translateX(-50%);white-space:nowrap;font:600 .8rem 'Space Grotesk',sans-serif;color:#7354a5;background:#fff;border:1px solid #e4d9fb;border-radius:99px;padding:.4rem 1rem;box-shadow:0 8px 20px #d8cef566}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-13px) rotate(1deg)}}
+@keyframes wavehand{0%,70%,100%{transform:rotate(0)}15%,45%{transform:rotate(-18deg)}30%,60%{transform:rotate(10deg)}}
+@keyframes blink{0%,45%,49%,100%{transform:scaleY(1)}47%{transform:scaleY(.12)}}
+@media(max-width:800px){.hero-layout{grid-template-columns:1fr}.avatar-scene{min-height:300px;order:-1}.avatar-art{max-width:290px}.hero{padding-top:2rem}}
+@media(prefers-reduced-motion:reduce){.avatar-art,.avatar-wave,.avatar-eye,.float-icon{animation:none!important}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="bar" id="bar" aria-hidden="true"></div>
+<nav><div class="wrap"><a class="nm" href="#">MK</a><a class="l" href="#projects">Projects</a><a class="l h" href="#skills">Skills</a><a class="l h" href="#background">Background</a><a class="l" href="#contact">Contact</a></div></nav>
+
+<header class="hero" id="hero"><div class="wrap"><div class="hero-layout"><div class="hero-copy">
+<div class="pill"><i></i>Open to co-op · January 2027</div>
+<h1><span>Mithila</span> Krishna Shashikala</h1>
+<p class="lede">Hi, I'm Mithila! ✨ I turn curious questions into data-driven ideas, AI projects, and things people can actually use.</p>
+<p class="seek">MS Data Science student at Northeastern University · Python, R & SQL · Boston, MA</p>
+<div class="btns"><a class="btn p" href="#projects">Explore my projects ↗</a><a class="btn" href="https://github.com/mithilaks" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="mailto:mithila448@gmail.com">Say hello ♡</a></div>
+</div><div class="avatar-scene" role="img" aria-label="Cute animated illustrated coder with long dark hair, pastel outfit, waving beside a laptop">
+<span class="float-icon a">✨</span><span class="float-icon b">💜</span><span class="float-icon c">🌸</span><span class="float-icon d">⭐</span>
+<svg class="avatar-art" viewBox="0 0 380 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><linearGradient id="hood" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b9a5ff"/><stop offset="1" stop-color="#8d78e5"/></linearGradient><linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#a3ecfa"/><stop offset="1" stop-color="#bca7ff"/></linearGradient></defs>
+<ellipse cx="192" cy="321" rx="155" ry="20" fill="#a8b5e8" opacity=".22"/>
+<path d="M93 160 Q82 65 183 58 Q282 54 283 163 L280 277 Q197 307 96 277Z" fill="#282044"/>
+<path d="M114 247 Q131 210 181 209 Q244 205 267 250 L283 314 H91Z" fill="url(#hood)"/>
+<path d="M147 199 L147 234 Q187 265 225 231 L222 198" fill="#e8a989"/>
+<ellipse cx="185" cy="151" rx="73" ry="83" fill="#f2bb9c"/>
+<path d="M109 150 Q98 83 151 67 Q217 40 256 97 Q263 125 256 157 Q244 105 226 96 Q169 128 111 120Z" fill="#282044"/>
+<path d="M109 153 Q96 197 119 242 L97 258 Q75 195 93 130Z" fill="#282044"/>
+<path d="M254 145 Q277 207 252 252 L275 263 Q296 193 274 129Z" fill="#282044"/>
+<g class="avatar-eye"><ellipse cx="159" cy="158" rx="5" ry="7" fill="#332a44"/><ellipse cx="212" cy="158" rx="5" ry="7" fill="#332a44"/></g>
+<path d="M174 187 Q186 198 200 186" stroke="#b76370" stroke-width="4" stroke-linecap="round" fill="none"/>
+<ellipse cx="138" cy="178" rx="12" ry="6" fill="#f09da2" opacity=".6"/><ellipse cx="232" cy="178" rx="12" ry="6" fill="#f09da2" opacity=".6"/>
+<g class="avatar-wave"><path d="M253 245 Q289 222 308 177" fill="none" stroke="#a18aeb" stroke-width="29" stroke-linecap="round"/><path d="M307 177 Q303 155 309 137 Q314 128 320 139 L323 154 L332 131 Q338 123 344 133 L340 157 L350 143 Q358 138 360 147 L348 176 Q343 191 324 200Z" fill="#f2bb9c"/></g>
+<rect x="95" y="249" width="191" height="87" rx="12" fill="#4d467d"/><rect x="102" y="255" width="177" height="73" rx="8" fill="url(#screen)"/>
+<path d="M175 281 l-13 12 13 12 M206 281 l13 12 -13 12" stroke="#5a4eaa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M199 277 l-15 31" stroke="#5a4eaa" stroke-width="4"/>
+<rect x="79" y="332" width="222" height="10" rx="5" fill="#7770a5"/>
+</svg><div class="avatar-caption">a little bit of code & a lot of curiosity ♡</div></div></div></div></header>
+
+<main>
+<section id="projects"><div class="wrap"><h2 class="rv">Projects <small>tap a card for details</small></h2>
+<div class="grid">
+<article class="card wide g1 rv"><div class="dt">Spring 2026</div><h3>Predicting U.S. domestic flight delays</h3><div class="sub">Northeastern University · with 1 teammate</div>
+<ul class="chips"><li>Python</li><li>XGBoost</li><li>CatBoost</li><li>LightGBM</li><li>scikit-learn</li><li>Optuna</li><li>SHAP</li></ul>
+<p class="sum">Built a model to predict whether a flight departs at least 15 minutes late, using only pre-departure schedule data from 200,000 flights in the 2015 DOT/BTS dataset.</p>
+<div class="more"><div><ul class="pts"><li>Compared baseline, tree-ensemble, neural network, and stacking models. The best, XGBoost tuned with Optuna, reached a holdout AUC of 0.65 and F1 of 0.37.</li><li>Found and corrected a target-encoding leak that inflated cross-validation AUC by 0.084, using a leak-free validation harness.</li><li>Used SHAP to show that a route’s historical delay rate was the strongest predictor.</li></ul></div></div>
+<a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+
+<article class="card wide g2 rv"><div class="dt">Spring 2026</div><h3>Behavioral and policy drivers of youth tobacco use</h3><div class="sub">DS 5110, Northeastern University · with 3 teammates</div>
+<ul class="chips"><li>Python</li><li>XGBoost</li><li>SHAP</li><li>K-Means</li><li>UMAP</li><li>statsmodels</li><li>pandas</li></ul>
+<p class="sum">Combined CDC Global Youth Tobacco Survey data (1999–2018), WHO MPOWER policy scores, and World Bank indicators into one country-year dataset.</p>
+<div class="more"><div><ul class="pts"><li>Predicted youth smoking prevalence with XGBoost and country-grouped cross-validation. SHAP showed that susceptibility, secondhand smoke exposure, and policy strength were the main drivers.</li><li>Grouped countries into risk profiles with K-Means and UMAP, and simulated that stronger policy in high-risk countries could lower prevalence by up to 7.34 percentage points.</li><li>Tested policy impact with difference-in-differences, found no statistically significant effect, and documented the limits of the design.</li></ul></div></div>
+<a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+
+<article class="card g3 rv"><div class="dt">April 2025</div><h3>Telecom-GPT: AI course assistance</h3><div class="sub">Bengaluru, India · with 4 teammates</div>
+<ul class="chips"><li>GPT</li><li>LLaMA</li><li>AI-based educational assistance</li></ul>
+<p class="sum">Developed a domain-specific AI assistant for Electronics and Telecommunication Engineering students, using GPT and LLaMA models to generate curriculum-aligned content.</p>
+<div class="more"><div><ul class="pts"><li>Implemented 4 features: text generation, technical content summarization, mathematical visualization, and multimedia search.</li></ul></div></div>
+<a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+
+<article class="card g4 rv"><div class="dt">September 2024</div><h3>FlashMeet: real-time collaboration with video conferencing</h3><div class="sub">Bengaluru, India · with 3 teammates</div>
+<ul class="chips"><li>WebRTC</li><li>Socket.io</li><li>Express.js</li><li>HTTPS</li></ul>
+<p class="sum">Built a collaboration platform with 4 integrated features: video conferencing, screen sharing, collaborative document editing, and a live whiteboard.</p>
+<div class="more"><div><ul class="pts"><li>Designed Express.js backend services with HTTPS for secure session management and data transmission, tested with 4 participants.</li></ul></div></div>
+<a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+
+<article class="card g2 rv"><div class="dt">Fall 2026<span class="st">In progress</span></div><h3>Husky Bites: campus food truck database</h3><div class="sub">Northeastern University · with 2 teammates</div>
+<ul class="chips"><li>Relational database design</li><li>EER and UML modeling</li></ul>
+<p class="sum">Designing a database for campus food truck operations with 2 teammates, for Data Management for Analytics.</p>
+<div class="more"><div><ul class="pts"><li>Current milestone: conceptual models using EER and UML diagrams.</li></ul></div></div>
+<button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+
+<article class="card g1 rv"><div class="dt">Fall 2026<span class="st">In progress</span></div><h3>Accessible campus route planner</h3><div class="sub">Northeastern University · with 2 teammates</div>
+<ul class="chips"><li>Graph algorithms</li><li>Dijkstra’s algorithm</li><li>A*</li></ul>
+<p class="sum">Building a tool for Fundamentals of Computer Engineering that recommends routes between campus buildings based on accessibility needs, stairs, and temporary closures.</p>
+<div class="more"><div><ul class="pts"><li>Representing the campus as a graph and comparing Dijkstra’s algorithm and A* as shortest-path methods.</li></ul></div></div>
+<button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv">Skills</h2>
+<div class="skills">
+<div class="card g1 rv"><h3>Programming languages</h3><ul class="chips"><li>Python</li><li>R</li><li>C</li><li>SQL</li></ul></div>
+<div class="card g2 rv"><h3>Tools and platforms</h3><ul class="chips"><li>MATLAB</li><li>NI LabVIEW</li><li>RStudio</li><li>VS Code</li><li>GitHub</li></ul></div>
+<div class="card g3 rv"><h3>Coursework</h3><ul class="chips"><li>Essentials of Data Science</li><li>Introduction to Machine Learning</li><li>Data Management for Analytics</li><li>Fundamentals of Computer Engineering</li></ul></div>
+<div class="card g4 rv"><h3>Certification</h3><ul class="chips"><li>Database Management System, NPTEL</li></ul></div>
+</div></div></section>
+
+<section id="background"><div class="wrap"><h2 class="rv">Background</h2>
+<div class="two rv">
+<div><h3>Education</h3>
+<div class="e"><b>Northeastern University</b><small>Expected May 2028</small><p>Master of Science in Data Science, Boston, MA</p></div>
+<div class="e"><b>RV College of Engineering</b><small>August 2025</small><p>Bachelor of Engineering in Electronics and Telecommunications, Bengaluru, India</p></div></div>
+<div><h3>Experience</h3>
+<div class="e"><b>Intern, Newtech Aerospace</b><small>Oct – Nov 2024</small><p>Emulated battery-cell charge and discharge cycles to support satellite power-system testing and fault analysis.</p></div>
+<div class="e"><b>Teaching Volunteer, U&amp;I NGO</b><small>Sep 2024 – Mar 2025</small><p>Taught English weekly to 10 children over 6 months and coordinated a fundraising drive and educational events.</p></div>
+<div class="e"><b>Intern, Confident Electronics</b><small>Nov – Dec 2023</small><p>Debugged and tested 2 embedded boards and contributed to schematic design and PCB layout.</p></div>
+<div class="e"><b>Intern, Nataraj Circuits</b><small>Nov – Dec 2022</small><p>Worked on multilayer PCB manufacturing, from layer stack-up and lamination to plating, etching, and solder mask.</p></div>
+<div class="e"><b>Senior Associate, RV Entrepreneurship Cell</b><small>Jan 2021 – Dec 2023</small><p>Grew event attendance 15% over 3 semesters by managing social media promotion for 5 techno-cultural events.</p></div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact rv"><h2>Let’s connect</h2>
+<p>I’m looking for a data analyst or data science co-op starting in January 2027. The quickest way to reach me is email.</p>
+<div class="btns"><a class="btn p" href="mailto:mithila448@gmail.com" target="_blank" rel="noopener">Email me</a><a class="btn" href="https://www.linkedin.com/in/mithila-krishna-shashikala" target="_blank" rel="noopener">LinkedIn profile</a></div></div></div></section>
+</main>
+<footer>Mithila Krishna Shashikala · Boston, MA</footer>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add('in')})}
+function toggle(c){var o=c.classList.toggle('open'),b=c.querySelector('.tg');if(b){b.setAttribute('aria-expanded',o);b.lastChild.textContent=o?'Hide':'Details'}}
+[].forEach.call(document.querySelectorAll('.card'),function(c){
+ if(!c.querySelector('.tg'))return;
+ c.addEventListener('click',function(e){if(e.target.closest('a'))return;if(e.target.closest('.tg')||!(getSelection()+'')){toggle(c)}});
+ if(fine&&!rm){
+  c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;c.style.setProperty('--mx',x+'px');c.style.setProperty('--my',y+'px');c.style.transform='perspective(900px) rotateX('+((y/r.height-.5)*-5)+'deg) rotateY('+((x/r.width-.5)*5)+'deg)'});
+  c.addEventListener('pointerleave',function(){c.style.transform=''});
+ }
+});
+var hero=document.getElementById('hero');
+if(!rm)hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();hero.style.setProperty('--hx',(e.clientX-r.left)+'px');hero.style.setProperty('--hy',(e.clientY-r.top)+'px')});
+var bar=document.getElementById('bar'),tk=false;
+function up(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;bar.style.transform='scaleX('+(m>0?h.scrollTop/m:0)+')';tk=false}
+addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});
+})();
+</script>
+</body>
+</html>
