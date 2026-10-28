@@ -129,7 +129,7 @@ nav{box-shadow:0 8px 30px rgba(74,99,155,.07)}
 <div class="pill"><i></i>Open to co-op · January 2027</div>
 <h1><span>Mithila</span> Krishna Shashikala</h1>
 <p class="lede">Hi, I'm Mithila! ✨ I turn curious questions into data-driven ideas, AI projects, and things people can actually use.</p>
-<p class="seek">MS Data Science student at Northeastern University · Python, R & SQL · Boston, MA</p>
+<p class="seek">MS Data Science student at Northeastern University · Python, R, SQL, Excel & Power BI · Boston, MA</p>
 <div class="btns"><a class="btn p" href="#projects">Explore my projects ↗</a><a class="btn" href="https://github.com/mithilaks" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="mailto:mithila448@gmail.com">Say hello ♡</a></div>
 </div><div class="avatar-scene" role="img" aria-label="Cute animated illustrated coder with long dark hair, pastel outfit, waving beside a laptop">
 <span class="float-icon a">✨</span><span class="float-icon b">💜</span><span class="float-icon c">🌸</span><span class="float-icon d">⭐</span>
@@ -157,14 +157,14 @@ nav{box-shadow:0 8px 30px rgba(74,99,155,.07)}
 <div class="grid">
 <article class="card wide g1 rv"><div class="dt">Spring 2026</div><h3>Predicting U.S. domestic flight delays</h3><div class="sub">Northeastern University · with 1 teammate</div>
 <ul class="chips"><li>Python</li><li>XGBoost</li><li>CatBoost</li><li>LightGBM</li><li>scikit-learn</li><li>Optuna</li><li>SHAP</li></ul>
-<p class="sum">Built a model to predict whether a flight departs at least 15 minutes late, using only pre-departure schedule data from 200,000 flights in the 2015 DOT/BTS dataset.</p>
-<div class="more"><div><ul class="pts"><li>Compared baseline, tree-ensemble, neural network, and stacking models. The best, XGBoost tuned with Optuna, reached a holdout AUC of 0.65 and F1 of 0.37.</li><li>Found and corrected a target-encoding leak that inflated cross-validation AUC by 0.084, using a leak-free validation harness.</li><li>Used SHAP to show that a route’s historical delay rate was the strongest predictor.</li></ul></div></div>
+<p class="sum">Built a model to predict whether a flight departs at least 15 minutes late, using only pre-departure schedule data from 200,000 flights in the 2015 DOT/BTS dataset, and turned the results into a clear view of where an operator could focus.</p>
+<div class="more"><div><ul class="pts"><li>Compared 14 model configurations, including baseline, tree-ensemble, neural network, and stacking models. The best, XGBoost tuned with Optuna, reached a holdout AUC of 0.652 and F1 of 0.37.</li><li>Detected a target-encoding leak that inflated cross-validation AUC by 0.085 (0.718 vs. 0.633) and rebuilt a fold-safe validation so performance estimates could be trusted.</li><li>Used SHAP to show that a route’s historical delay rate was the strongest predictor, and tuned the decision threshold to raise recall from 61% to 65% at unchanged F1.</li></ul></div></div>
 <a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
 
 <article class="card wide g2 rv"><div class="dt">Spring 2026</div><h3>Behavioral and policy drivers of youth tobacco use</h3><div class="sub">DS 5110, Northeastern University · with 3 teammates</div>
 <ul class="chips"><li>Python</li><li>XGBoost</li><li>SHAP</li><li>K-Means</li><li>UMAP</li><li>statsmodels</li><li>pandas</li></ul>
-<p class="sum">Combined CDC Global Youth Tobacco Survey data (1999–2018), WHO MPOWER policy scores, and World Bank indicators into one country-year dataset.</p>
-<div class="more"><div><ul class="pts"><li>Predicted youth smoking prevalence with XGBoost and country-grouped cross-validation. SHAP showed that susceptibility, secondhand smoke exposure, and policy strength were the main drivers.</li><li>Grouped countries into risk profiles with K-Means and UMAP, and simulated that stronger policy in high-risk countries could lower prevalence by up to 7.34 percentage points.</li><li>Tested policy impact with difference-in-differences, found no statistically significant effect, and documented the limits of the design.</li></ul></div></div>
+<p class="sum">Combined CDC Global Youth Tobacco Survey data (1999–2018), WHO MPOWER policy scores, and World Bank indicators into 522 country-year observations (30,535 survey records), handling 18% missing data with regional-median imputation.</p>
+<div class="more"><div><ul class="pts"><li>Predicted youth smoking prevalence with XGBoost and country-grouped cross-validation. SHAP showed that susceptibility, secondhand smoke exposure, and policy strength were the main drivers.</li><li>Segmented countries into risk profiles with K-Means and UMAP, and ran a policy scenario analysis suggesting stronger policy in high-risk countries could lower prevalence by up to 7.34 percentage points.</li><li>Tested policy impact with difference-in-differences and found no statistically significant effect (p = 0.88), so the scenario results are reported as directional, not causal.</li></ul></div></div>
 <a class="repo" href="https://github.com/mithilaks" target="_blank" rel="noopener" title="Visit my GitHub profile; individual repository links coming soon">GitHub profile ↗</a><button class="tg" type="button" aria-expanded="false"><span>+</span>Details</button></article>
 
 <article class="card g3 rv"><div class="dt">April 2025</div><h3>Telecom-GPT: AI course assistance</h3><div class="sub">Bengaluru, India · with 4 teammates</div>
@@ -194,10 +194,13 @@ nav{box-shadow:0 8px 30px rgba(74,99,155,.07)}
 
 <section id="skills"><div class="wrap"><h2 class="rv">Skills</h2>
 <div class="skills">
-<div class="card g1 rv"><h3>Programming languages</h3><ul class="chips"><li>Python</li><li>R</li><li>C</li><li>SQL</li></ul></div>
-<div class="card g2 rv"><h3>Tools and platforms</h3><ul class="chips"><li>MATLAB</li><li>NI LabVIEW</li><li>RStudio</li><li>VS Code</li><li>GitHub</li></ul></div>
-<div class="card g3 rv"><h3>Coursework</h3><ul class="chips"><li>Essentials of Data Science</li><li>Introduction to Machine Learning</li><li>Data Management for Analytics</li><li>Fundamentals of Computer Engineering</li></ul></div>
-<div class="card g4 rv"><h3>Certification</h3><ul class="chips"><li>Database Management System, NPTEL</li></ul></div>
+<div class="card g1 rv"><h3>Analytics and visualization</h3><ul class="chips"><li>Excel</li><li>Power BI</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li></ul></div>
+<div class="card g2 rv"><h3>Programming languages</h3><ul class="chips"><li>Python</li><li>R</li><li>SQL</li><li>C</li></ul></div>
+<div class="card g3 rv"><h3>Data and modeling</h3><ul class="chips"><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>statsmodels</li><li>SHAP</li><li>K-Means</li><li>UMAP</li></ul></div>
+<div class="card g4 rv"><h3>Methods</h3><ul class="chips"><li>Segmentation</li><li>Driver analysis</li><li>Scenario modeling</li><li>Data cleaning and imputation</li><li>Cross-validation</li><li>Leakage detection</li><li>Difference-in-differences</li></ul></div>
+<div class="card g1 rv"><h3>Tools and platforms</h3><ul class="chips"><li>GitHub</li><li>VS Code</li><li>RStudio</li><li>MATLAB</li><li>NI LabVIEW</li></ul></div>
+<div class="card g2 rv"><h3>Coursework</h3><ul class="chips"><li>Essentials of Data Science</li><li>Introduction to Machine Learning</li><li>Data Management for Analytics</li><li>Fundamentals of Computer Engineering</li></ul></div>
+<div class="card wide g3 rv"><h3>Certification</h3><ul class="chips"><li>Database Management System, NPTEL</li></ul></div>
 </div></div></section>
 
 <section id="background"><div class="wrap"><h2 class="rv">Background</h2>
@@ -214,7 +217,7 @@ nav{box-shadow:0 8px 30px rgba(74,99,155,.07)}
 </div></div></section>
 
 <section id="contact"><div class="wrap"><div class="contact rv"><h2>Let’s connect</h2>
-<p>I’m looking for a data analyst or data science co-op starting in January 2027. The quickest way to reach me is email.</p>
+<p>I’m looking for a data analyst, business analytics, or data science co-op starting in January 2027. The quickest way to reach me is email.</p>
 <div class="btns"><a class="btn p" href="mailto:mithila448@gmail.com" target="_blank" rel="noopener">Email me</a><a class="btn" href="https://www.linkedin.com/in/mithila-krishna-shashikala" target="_blank" rel="noopener">LinkedIn profile</a></div></div></div></section>
 </main>
 <footer>Mithila Krishna Shashikala · Boston, MA</footer>
